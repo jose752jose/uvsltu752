@@ -206,7 +206,7 @@ def onmessage(update,bot:ObigramClient):
         #tl_admin_user = os.environ.get('admin')
 
         #set in debug
-        tl_admin_user = 'Zeta30'
+        tl_admin_user = 'nautaii'
         path = '.'
 
         jdb = JsonDatabase('database')
@@ -224,10 +224,10 @@ def onmessage(update,bot:ObigramClient):
                 user_info = jdb.get_user(username)
                 jdb.save()
         else:
-            mensaje = '❌No tiene contrato en este bot, o su contrato a finalizado❌\n👤Contactar: @Zeta30 si desea hacer un nuevo contrato💳\n'
+            mensaje = '❌No tiene contrato en este bot, o su contrato a finalizado❌\n👤Contactar: @nautaii si desea hacer un nuevo contrato💳\n'
             intento_msg = "💢El usuario @"+username+ "💢"
             bot.sendMessage(update.message.chat.id,mensaje)
-            bot.sendMessage(-1001841041488,intento_msg)
+            bot.sendMessage(1759969205,intento_msg)
             return
 
         msgText = ''
@@ -407,7 +407,7 @@ def onmessage(update,bot:ObigramClient):
         thread.store('msg',message)
 
         if '/start' in msgText:
-            start_msg = '📤DM Uploader Free📤\n\n🔰Bot de descargas gratis de la cadena 📤DM Uploader Free📤\n#DescargasGratis\n#Velocidad'
+            start_msg = '📤DM Uploader Free📤\n\n🔰Bot de descargas gratis de la cadena 📤 nautaii📤\n#DescargasGratis\n#Velocidad'
             bot.editMessageText(message,start_msg)
         elif '/token' in msgText:
             message2 = bot.editMessageText(message,'🤖Getting token, please wait...')
@@ -451,7 +451,7 @@ def onmessage(update,bot:ObigramClient):
            print(str(ex))
   
 def main():
-    bot_token = '5600454857:AAHWYFU-FYGgnqNPLF6xG8jsvIhZGhgvMQ0'
+    bot_token = '5956055669:AAHRGqRPjEYYVXX7zxZ3WNwzJ1mjy4cLQZk'
     
 
     bot = ObigramClient(bot_token)

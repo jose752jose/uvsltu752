@@ -1,8 +1,7 @@
 requests
 requests[socks]
 bs4
-user_agent
-
+user_agent
 requests_toolbelt
 telethon
 tenacity

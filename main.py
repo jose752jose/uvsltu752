@@ -3,6 +3,7 @@ import pstats
 from pyobigram.utils import sizeof_fmt,get_file_size,createID,nice_time
 from pyobigram.client import ObigramClient,inlineQueryResultArticle
 from MoodleClient import MoodleClient
+
 from JDatabase import JsonDatabase
 import zipfile
 import os
@@ -12,8 +13,7 @@ import mediafire
 import datetime
 import time
 import requests
-from bs4 import BeautifulSoup
-
+from bs4 import BeautifulSoup
 from pydownloader.downloader import Downloader
 from ProxyCloud import ProxyCloud
 import ProxyCloud
@@ -369,7 +369,7 @@ def onmessage(update,bot:ObigramClient):
                 bot.sendMessage(update.message.chat.id,'❌Error en el comando /repo repo❌')
             return
 
-        if '/proxy' in msgText:
+        if '/' in msgText:
             try:
                 cmd = str(msgText).split(' ',2)
                 proxy = cmd[1]
@@ -450,7 +450,7 @@ def onmessage(update,bot:ObigramClient):
            print(str(ex))
   
 def main():
-    bot_token = '5956055669:AAHRGqRPjEYYVXX7zxZ3WNwzJ1mjy4cLQZk'
+    bot_token = '5561260685:AAFRMuPNvQpgoj7Mb2gW_WvMi_v-1MAGZU4'
     
 
     bot = ObigramClient(bot_token)

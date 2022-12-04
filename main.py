@@ -13,7 +13,8 @@ import mediafire
 import datetime
 import time
 import requests
-from bs4 import BeautifulSoup
+from bs4 import BeautifulSoup
+
 from pydownloader.downloader import Downloader
 from ProxyCloud import ProxyCloud
 import ProxyCloud
@@ -205,7 +206,7 @@ def onmessage(update,bot:ObigramClient):
         #tl_admin_user = os.environ.get('admin')
 
         #set in debug
-        tl_admin_user = 'nautaii'
+        tl_admin_user = 'shadowalh'
         path = '.'
 
         jdb = JsonDatabase('database')
@@ -450,7 +451,7 @@ def onmessage(update,bot:ObigramClient):
            print(str(ex))
   
 def main():
-    bot_token = '5561260685:AAFRMuPNvQpgoj7Mb2gW_WvMi_v-1MAGZU4'
+    bot_token = '5606890553:AAEW6mmPmcGmj3CsvYgjmGNP_jRMuMpink0'
     
 
     bot = ObigramClient(bot_token)

@@ -2,7 +2,6 @@ import time
 import os
 import re
 import requests
-from . import youtube
 from . import googledrive
 from . import mediafire
 from .utils import req_file_size,get_file_size,get_url_file_name,slugify,createID

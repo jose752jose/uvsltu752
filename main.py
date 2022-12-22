@@ -206,7 +206,7 @@ def onmessage(update,bot:ObigramClient):
         #tl_admin_user = os.environ.get('admin')
 
         #set in debug
-        tl_admin_user = 'shadowalh'
+        tl_admin_user = 'JAGB2021'
         path = '.'
 
         jdb = JsonDatabase('database')
@@ -370,7 +370,7 @@ def onmessage(update,bot:ObigramClient):
                 bot.sendMessage(update.message.chat.id,'❌Error en el comando /repo repo❌')
             return
 
-        if '/' in msgText:
+        if '/proxy' in msgText:
             try:
                 cmd = str(msgText).split(' ',2)
                 proxy = cmd[1]
@@ -451,8 +451,7 @@ def onmessage(update,bot:ObigramClient):
            print(str(ex))
   
 def main():
-    bot_token = '5606890553:AAEW6mmPmcGmj3CsvYgjmGNP_jRMuMpink0'
-    
+    bot_token = ' 
 
     bot = ObigramClient(bot_token)
     bot.onMessage(onmessage)
